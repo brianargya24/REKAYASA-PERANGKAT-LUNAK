@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.marion.Login"
+    android:background="@drawable/backgroundlogin">
+<LinearLayout
+    android:layout_width="361dp"
+    android:layout_height="150dp"
+    android:layout_marginTop="350dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout">
+
+
+    <EditText
+        android:id="@+id/emaillog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_light"
+        android:text="Login" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/signupbtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginStart="15dp"
+        android:text="Signup"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/cabtn"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linearLayout"
+        android:layout_below="@+id/linearLayout"
+        android:text="Create Account"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
